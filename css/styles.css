@@ -1,0 +1,111 @@
+
+:root {
+
+  /* Primary */
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--Dark-Blue);
+}
+main,
+.advice-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding-block-start: 12rem;
+  padding-inline: 1rem;
+}
+
+.advice-content {
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--Light-Cyan);
+  border-radius: 1rem;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  padding-block-end: 7rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 30px var(--Dark-Blue);
+}
+
+.advice-content h4{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: var(--Neon-Green);
+}
+
+.advice-content p {
+  font-size: 2.4rem;
+  margin-top: 0;
+  font-weight: 800;
+}
+
+.divider-desktop {
+  display: none;
+}
+
+.dice {
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  padding: 2rem;
+  position: absolute;
+  width: 6.4rem;
+  height: 6.4rem;
+  bottom: -3rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dice:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 30px var(--Neon-Green);
+}
+
+.attribution {
+  margin-top: 15rem;
+  font-size: 11px;
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+.attribution a {
+  color: var(--Neon-Green)
+}
+
+@media only screen and (min-width: 765px) {
+  .advice-content {
+    max-width: 50rem;
+  }
+
+  .advice-content p {
+    font-size: 2.8rem;
+  }
+
+  .divider-desktop {
+    display: block;
+  }
+
+  .divider-mobile {
+    display: none;
+  }
+}
