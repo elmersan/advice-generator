@@ -1,3 +1,4 @@
+@import url('snippet.css');
 
 :root {
 
@@ -75,6 +76,20 @@ main {
   bottom: -3rem;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.dice .animate {
+  animation: 0.7s infinite normal slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotate(180deg);
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .dice:hover {
